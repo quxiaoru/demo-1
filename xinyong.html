@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html > 
+	<head>
+		<meta charset="UTF-8">
+	    <title>111</title>	
+	    <style type='text/css'>
+	     #rotatey1{
+	       width:300px;
+	       height:100px;
+	       border:2px solid blue;
+	       background-color:yellow;
+               text-align:center;
+	     
+	    }
+	    
+	      #div2{
+	        float:left;   
+	        margin-right: 20px; 
+	        margin-top: 30px;
+	    }
+    
+	    </style>
+	</head>
+<body >
+   <div id="rotatey1" class="animated_div" >
+             示例文字
+   </div>
+
+        <div id='div2'>
+
+   	     <input type='button' value='绕X轴旋转'   onclick="rotateXDIV()" />
+   	     </div>  
+   	 
+   	    <div id='div2'>
+         <input type='button' value='绕Y轴旋转' onclick="rotateYDIV()" />
+         </div>
+         <div id='div2'>
+         <input type='button' value='绕Z轴旋转' onclick="rotateZDIV()" />
+          </div>
+
+</body> 
+<script>
+
+var ny=0,rotYINT
+
+function rotateXDIV()
+{
+y=document.getElementById("rotatey1");
+clearInterval(rotYINT);
+rotYINT=setInterval("startXRotate()",10);
+}
+
+function startXRotate()
+{
+ny=ny+1;
+y.style.transform="rotateX(" + ny + "deg)"
+
+if (ny==180 || ny>=360)
+{
+clearInterval(rotYINT);
+if (ny>=360){ny=0}
+}
+}
+
+
+
+
+function rotateYDIV()
+{
+y=document.getElementById("rotatey1");
+clearInterval(rotYINT);
+rotYINT=setInterval("startYRotate()",10);
+}
+function startYRotate()
+{
+ny=ny+1;
+y.style.transform="rotateY(" + ny + "deg)";
+
+if (ny==180 || ny>=360)
+{
+clearInterval(rotYINT);
+if (ny>=360){ny=0}
+}
+}
+
+
+
+function rotateZDIV()
+{
+y=document.getElementById("rotatey1");
+clearInterval(rotYINT);
+rotYINT=setInterval("startZRotate()",10);
+}
+function startZRotate()
+{
+ny=ny+1;
+y.style.transform="rotateZ(" + ny + "deg)";
+
+if (ny==180 || ny>=360)
+{
+clearInterval(rotYINT);
+if (ny>=360){ny=0}
+}
+}
+
+</script>
+</html>
+
+
+
