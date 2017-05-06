@@ -1,11 +1,11 @@
 # README.md
 # Github问题集（2）
 1.个人主页上的“+”下拉菜单可创建的四种类别分别有？分别的意思？　　
-  ** New repository（创建新仓库）, Import repository（引入仓库）,New gist（创建新代码片段）,New organization（新建组织）. **
+  New repository（创建新仓库）, Import repository（引入仓库）,New gist（创建新代码片段）,New organization（新建组织）.
 
 2.如何能将仓库中的html文件直接解析成页面？
 
- * 点击settings,找到Source，点击master branch. *
+ 点击settings,找到Source，点击master branch.
 
 3.如何删除仓库
   
